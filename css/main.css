@@ -1,0 +1,119 @@
+body {
+  box-sizing: border-box;
+  margin: 0px; }
+  body * {
+    box-sizing: border-box;
+    font-family: "Commissioner", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px; }
+
+h1 {
+  font-size: 48px; }
+
+h3 {
+  font-size: 32px; }
+
+h4 {
+  font-size: 20px; }
+
+body {
+  width: 100%;
+  height: 100%; }
+  body .cf-container {
+    height: 100%;
+    width: 100%; }
+  body .cf-nav-bckg {
+    background-image: url("/images/image-hero-desktop.jpg");
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+    background-size: cover; }
+  body .cf-nav-bar {
+    margin: 0 auto;
+    width: 80%;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: space-between; }
+  body .cf-nav-img {
+    width: 129px;
+    height: 20px; }
+  body .cf-nav-bar-part a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 12px;
+    color: #ffffff; }
+  body .cf-content {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 730px;
+    position: relative; }
+  body .cf-head-part {
+    padding: 5px 20px;
+    width: 100%;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px 0px;
+    position: absolute;
+    top: -60px;
+    flex-direction: column; }
+  body .cf-head-part-logo {
+    background-image: url("/images/logo-mastercraft.svg");
+    height: 56px;
+    width: 56px;
+    position: absolute;
+    top: -90px; }
+  body .cf-head-part-text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: 40px; }
+  body .cf-head-part-text span {
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 400;
+    color: #7a7a7a; }
+  body .cf-head-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 28px 0px; }
+  body .primary-button {
+    font-weight: 700;
+    border-radius: 33px;
+    background-color: #3cb3ab;
+    border: none;
+    padding: 0px 40px;
+    color: #ffffff; }
+  body .primary-button:hover {
+    background-color: #147a73; }
+  body .special-button {
+    display: flex;
+    padding: 0px 20px; }
+  body .special-button:hover {
+    opacity: 0.7; }
+  body .bookmark {
+    margin-right: -40px;
+    z-index: 1; }
+  body .secondary-button {
+    font-weight: 700;
+    border-radius: 33px;
+    border: none;
+    padding: 0px 25px 0px 50px; }
+  body .cf-money-part {
+    padding: 5px 20px;
+    width: 100%;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px 0px; }
