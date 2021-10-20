@@ -93,10 +93,12 @@ body {
     background-color: #3cb3ab;
     border: none;
     padding: 0px 40px;
-    color: #ffffff; }
+    color: #ffffff;
+    cursor: pointer; }
   body .primary-button:hover {
     background-color: #147a73; }
   body .special-button {
+    cursor: pointer;
     display: flex;
     padding: 0px 20px; }
   body .special-button:hover {
@@ -108,7 +110,8 @@ body {
     font-weight: 700;
     border-radius: 33px;
     border: none;
-    padding: 0px 25px 0px 50px; }
+    padding: 0px 25px 0px 50px;
+    cursor: pointer; }
   body .cf-money-part {
     padding: 5px 20px;
     width: 100%;

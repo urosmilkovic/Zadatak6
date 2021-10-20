@@ -88,6 +88,7 @@ body {
     border: none;
     padding: 0px 40px;
     color: $white;
+    cursor: pointer;
   }
 
   .primary-button:hover {
@@ -95,6 +96,7 @@ body {
   }
 
   .special-button {
+    cursor: pointer;
     display: flex;
     padding: 0px 20px;
   }
@@ -113,6 +115,7 @@ body {
     border-radius: 33px;
     border: none;
     padding: 0px 25px 0px 50px;
+    cursor: pointer;
   }
 
   .cf-money-part {
