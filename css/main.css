@@ -173,7 +173,7 @@ body {
     margin-left: 35px;
     width: 90%; }
   body .cf-about {
-    margin-top: 25px;
+    margin: 25px 0px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -194,8 +194,7 @@ body {
     margin-bottom: 30px; }
   body .cf-mahogany {
     opacity: 0.7;
-    padding: 20px;
-    margin-top: 25px;
+    margin: 25px 0px;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -203,7 +202,6 @@ body {
     border-radius: 8px;
     box-shadow: 0px 0px 1px 0px; }
   body .cf-black {
-    padding: 20px;
     margin-top: 25px;
     width: 90%;
     display: flex;
@@ -212,7 +210,6 @@ body {
     border-radius: 8px;
     box-shadow: 0px 0px 1px 0px; }
   body .cf-bambo {
-    padding: 20px;
     margin-top: 25px;
     width: 90%;
     display: flex;
@@ -224,18 +221,28 @@ body {
     display: flex;
     justify-content: space-between; }
   body .cf-black-head {
+    padding: 20px;
+    padding-bottom: 0px;
     display: flex;
+    font-size: 18px;
+    font-weight: 700;
     justify-content: space-between; }
   body .cf-bambo-head {
+    padding: 20px;
+    padding-bottom: 0px;
     display: flex;
     justify-content: space-between;
     font-size: 18px;
     font-weight: 700; }
   body .cf-mahogany-head {
+    padding: 20px;
+    padding-bottom: 0px;
     display: flex;
     justify-content: space-between;
     font-size: 18px;
     font-weight: 700; }
+  body .notworking {
+    pointer-events: none; }
   body .cf-black-head span {
     color: #3cb3ab;
     font-size: 15px;
@@ -249,18 +256,22 @@ body {
     font-size: 15px;
     font-weight: 500; }
   body .cf-mahogany-text {
-    margin: 15px 0px;
+    margin: 20px;
+    margin-left: 55px;
     font-size: 16px;
     color: #7a7a7a; }
   body .cf-black-text {
-    margin: 15px 0px;
+    margin: 20px;
+    margin-left: 55px;
     font-size: 16px;
     color: #7a7a7a; }
   body .cf-bambo-text {
-    margin: 15px 0px;
+    margin: 20px;
+    margin-left: 55px;
     font-size: 16px;
     color: #7a7a7a; }
   body .cf-left-button {
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between; }
@@ -283,3 +294,153 @@ body {
     cursor: pointer; }
   body .cf-about-primary-button:hover {
     background-color: #147a73; }
+  body .cf-head-fix {
+    display: flex;
+    padding: 20px 20px 0px 20px;
+    justify-content: space-between; }
+  body .cf-pledge {
+    padding-left: 20px; }
+  body .cf-about-head-back {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 40px 0px;
+    color: #333;
+    display: flex;
+    justify-content: space-between; }
+  body .modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4); }
+  body .modal-thank {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4); }
+  body .modal-content-thank {
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 465px;
+    border-radius: 8px;
+    color: #7a7a7a; }
+  body .modal-content {
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 730px;
+    border-radius: 8px; }
+  body .mfix {
+    margin: 25px auto; }
+  body .mafix {
+    margin: 25px; }
+  body .bfix {
+    pointer-events: none; }
+  body .modal-part {
+    width: 100%; }
+  body .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  body .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer; }
+  body .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%; }
+  body .container:hover input ~ .checkmark {
+    background-color: #ccc; }
+  body .container input:checked ~ .checkmark {
+    box-shadow: 0px 0px 1px 0px; }
+  body .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    background-color: #3cb3ab; }
+  body .container input:checked ~ .checkmark:after {
+    display: block;
+    background-color: #3cb3ab; }
+  body .container .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white; }
+  body .cf-pedge-enter {
+    display: none;
+    justify-content: space-between;
+    border-top: 1px solid rgba(107, 101, 101, 0.507);
+    padding: 40px;
+    padding-bottom: 20px;
+    color: #7a7a7a; }
+  body .cf-pedge-button {
+    padding: 13px;
+    font-size: 12px;
+    font-weight: 400; }
+  body .cf-pedge-enter-input {
+    display: flex;
+    margin-right: 20px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 1px 0px;
+    padding: 10px;
+    width: 100px; }
+  body .cf-pedge-enter-input input {
+    outline: none;
+    width: 100%;
+    border: none;
+    margin-left: 10px; }
+  body .cf-pedge-enter-buttons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row; }
+  body .input-money {
+    position: absolute; }
+
+.getit {
+  margin-top: 30px;
+  padding: 20px; }
