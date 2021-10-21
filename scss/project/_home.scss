@@ -1,0 +1,704 @@
+body {
+  width: 100%;
+  height: 100%;
+  .cf-container {
+    height: 100%;
+    width: 100%;
+  }
+  .cf-nav-bckg {
+    background-image: url("/images/image-hero-desktop.jpg");
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+  }
+
+  .cf-nav-bar {
+    margin: 0 auto;
+    width: 80%;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cf-nav-img {
+    width: 129px;
+    height: 20px;
+  }
+  .cf-nav-bar-part a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 12px;
+    color: $white;
+  }
+
+  .cf-content {
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 730px;
+  }
+
+  .cf-head-part {
+    padding: 5px 20px;
+    width: 100%;
+    display: flex;
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px 0px;
+    flex-direction: column;
+    margin: -45px auto 10px;
+    position: relative;
+  }
+
+  .cf-head-part-logo {
+    background-image: url("/images/logo-mastercraft.svg");
+    height: 56px;
+    width: 56px;
+    position: absolute;
+    top: -30px;
+    left: 45%;
+  }
+
+  .cf-head-part-text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: 40px;
+  }
+  .cf-head-part-text span {
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 400;
+    color: $border;
+  }
+
+  .cf-head-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 28px 0px;
+  }
+
+  .primary-button {
+    font-weight: 700;
+    border-radius: 33px;
+    background-color: $primary;
+    border: none;
+    padding: 0px 40px;
+    color: $white;
+    cursor: pointer;
+  }
+
+  .primary-button:hover {
+    background-color: $primaryh;
+  }
+
+  .special-button {
+    cursor: pointer;
+    display: flex;
+    padding: 0px 20px;
+  }
+
+  .special-button:hover {
+    opacity: 0.7;
+  }
+
+  .bookmark {
+    margin-right: -40px;
+    z-index: 1;
+  }
+
+  .secondary-button {
+    font-weight: 700;
+    border-radius: 33px;
+    border: none;
+    padding: 0px 25px 0px 50px;
+    cursor: pointer;
+  }
+
+  .cf-money-part {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px 0px;
+  }
+
+  .cf-backed {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    margin: 20px;
+    font-weight: 700;
+    border-right: 1px solid #979797;
+  }
+
+  .cf-backed span {
+    font-size: 15px;
+    font-weight: 300;
+    color: $border;
+  }
+
+  .cf-total-backers {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    margin: 20px;
+    font-weight: 700;
+    border-right: 1px solid #979797;
+  }
+
+  .cf-total-backers span {
+    font-size: 15px;
+    font-weight: 300;
+    color: $border;
+  }
+
+  .cf-days-left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    margin: 20px;
+    font-weight: 700;
+  }
+
+  .cf-days-left span {
+    font-size: 15px;
+    font-weight: 300;
+    color: $border;
+  }
+
+  .progress-bar {
+    padding: 10px;
+    width: 50%;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: $primary;
+    border-radius: 33px;
+    -webkit-transition: width 0.6s ease;
+    -o-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+  }
+  .cf-progress-bar {
+    display: flex;
+    margin-top: -35px;
+    margin-left: 35px;
+    width: 90%;
+  }
+
+  .cf-about {
+    margin: 25px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    flex-direction: column;
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px 0px;
+  }
+
+  .cf-about-head {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 40px 0px;
+    color: #333;
+  }
+
+  .cf-text {
+    padding: 0px 40px;
+    font-size: 16px;
+    color: $border;
+    margin-bottom: 30px;
+  }
+
+  .cf-mahogany {
+    opacity: 0.7;
+    margin: 25px 0px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px 0px;
+  }
+
+  .cf-black {
+    margin-top: 25px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px 0px;
+  }
+
+  .cf-free {
+    margin-top: 25px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px 0px;
+  }
+
+  .cf-bambo {
+    margin-top: 25px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px 0px;
+  }
+
+  .cf-mahogany {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cf-black-head {
+    padding: 20px;
+    padding-bottom: 0px;
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: space-between;
+  }
+
+  .cf-bambo-head {
+    padding: 20px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .cf-mahogany-head {
+    padding: 20px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .notworking {
+    pointer-events: none;
+  }
+
+  .cf-black-head span {
+    color: $primary;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .cf-mahogany-head span {
+    color: $primary;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .cf-bambo-head span {
+    color: $primary;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .cf-mahogany-text {
+    margin: 20px;
+    margin-left: 55px;
+    font-size: 16px;
+    color: $border;
+  }
+
+  .cf-black-text {
+    margin: 20px;
+    margin-left: 55px;
+    font-size: 16px;
+    color: $border;
+  }
+
+  .cf-bambo-text {
+    margin: 20px;
+    margin-left: 55px;
+    font-size: 16px;
+    color: $border;
+  }
+
+  .cf-left-button {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cf-left-button h1 {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .cf-left-button span {
+    padding-left: 5px;
+    font-size: 15px;
+    color: $border;
+  }
+
+  .cf-about-primary-button {
+    font-weight: 700;
+    border-radius: 33px;
+    background-color: $primary;
+    border: none;
+    padding: 15px 40px;
+    color: $white;
+    cursor: pointer;
+  }
+  .cf-about-primary-button:hover {
+    background-color: $primaryh;
+  }
+
+  .cf-head-fix {
+    display: flex;
+    padding: 20px 20px 0px 20px;
+    justify-content: space-between;
+  }
+
+  .cf-pledge {
+    padding-left: 20px;
+  }
+
+  .cf-about-head-back {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 40px 0px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .modal-thank {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .modal-content-thank {
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 465px;
+    border-radius: 8px;
+    color: $border;
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 730px;
+    border-radius: 8px;
+  }
+
+  .mfix {
+    margin: 25px auto;
+  }
+
+  .mafix {
+    margin: 25px;
+  }
+
+  .bfix {
+    pointer-events: none;
+  }
+
+  .modal-part {
+    width: 100%;
+  }
+
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .goBack {
+    cursor: pointer;
+  }
+
+  .pfix {
+    padding: 0px;
+    justify-content: flex-start;
+  }
+
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+
+  .active {
+    border: 1px solid $primary;
+  }
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  .container input:checked ~ .checkmark {
+    box-shadow: 0px 0px 1px 0px;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    background-color: #3cb3ab;
+  }
+
+  .container input:checked ~ .checkmark:after {
+    display: block;
+    background-color: #3cb3ab;
+  }
+
+  .container .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+  }
+
+  .cf-pedge-enter-free {
+    display: none;
+    justify-content: space-between;
+    border-top: 1px solid rgba(107, 101, 101, 0.507);
+    padding: 40px;
+    padding-bottom: 20px;
+    color: $border;
+  }
+
+  .cf-pedge-enter-bambo {
+    display: none;
+    justify-content: space-between;
+    border-top: 1px solid rgba(107, 101, 101, 0.507);
+    padding: 40px;
+    padding-bottom: 20px;
+    color: $border;
+  }
+
+  .cf-pedge-enter-black {
+    display: none;
+    justify-content: space-between;
+    border-top: 1px solid rgba(107, 101, 101, 0.507);
+    padding: 40px;
+    padding-bottom: 20px;
+    color: $border;
+  }
+
+  .cf-pedge-button {
+    padding: 13px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .cf-pedge-enter-input {
+    display: flex;
+    margin-right: 20px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 1px 0px;
+    padding: 10px;
+    width: 100px;
+  }
+
+  .cf-pedge-enter-input input {
+    outline: none;
+    width: 100%;
+    border: none;
+    margin-left: 10px;
+  }
+
+  .cf-pedge-enter-buttons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .input-money {
+    position: absolute;
+  }
+}
+.getit {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.filler {
+  filter: invert(58%) sepia(85%) saturate(300%) hue-rotate(127deg)
+    brightness(88%) contrast(92%);
+}
+
+.filler-cap {
+  fill: white;
+}
+
+.bfix {
+  pointer-events: none;
+}
+
+.cf-hamburger {
+  display: none;
+  background-image: url("/images/icon-hamburger.svg");
+  width: 20px;
+  height: 20px;
+}
+
+@include sm {
+  .cf-hamburger {
+    display: block;
+  }
+
+  .cf-nav-bar-part {
+    display: none;
+  }
+
+  .cf-nav-bckg {
+    background-image: url("/images/image-hero-mobile.jpg") !important;
+    height: 30vh !important;
+  }
+
+  .cf-content {
+    width: 90%;
+  }
+  .secondary-button {
+    display: none;
+  }
+
+  .cf-head-buttons {
+    justify-content: space-evenly;
+  }
+
+  .cf-money-part {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cf-backed {
+    border: none !important;
+  }
+
+  .cf-total-backers {
+    border: none !important;
+  }
+
+  .cf-bambo-head {
+    flex-direction: column;
+  }
+
+  .cf-left-button {
+    align-items: flex-start !important;
+    flex-direction: column;
+  }
+
+  .cf-left-button button {
+    margin-top: 15px;
+  }
+
+  .cf-black-head {
+    flex-direction: column;
+  }
+
+  .cf-mahogany-head {
+    flex-direction: column;
+  }
+
+  .cf-pedge-enter-bambo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cf-pedge-enter-black {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cf-pedge-enter-free {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cf-pedge-enter-buttons {
+    padding-top: 20px;
+  }
+
+  .modal-content-thank {
+    max-width: 385px !important;
+  }
+}
