@@ -243,6 +243,16 @@ body {
     box-shadow: 0px 0px 1px 0px;
   }
 
+  .cf-free {
+    margin-top: 25px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px 0px;
+  }
+
   .cf-bambo {
     margin-top: 25px;
     width: 90%;
@@ -464,6 +474,15 @@ body {
     user-select: none;
   }
 
+  .goBack {
+    cursor: pointer;
+  }
+
+  .pfix {
+    padding: 0px;
+    justify-content: flex-start;
+  }
+
   .container input {
     position: absolute;
     opacity: 0;
@@ -480,6 +499,9 @@ body {
     border-radius: 50%;
   }
 
+  .active {
+    border: 1px solid $primary;
+  }
   .container:hover input ~ .checkmark {
     background-color: #ccc;
   }
@@ -509,7 +531,25 @@ body {
     background: white;
   }
 
-  .cf-pedge-enter {
+  .cf-pedge-enter-free {
+    display: none;
+    justify-content: space-between;
+    border-top: 1px solid rgba(107, 101, 101, 0.507);
+    padding: 40px;
+    padding-bottom: 20px;
+    color: $border;
+  }
+
+  .cf-pedge-enter-bambo {
+    display: none;
+    justify-content: space-between;
+    border-top: 1px solid rgba(107, 101, 101, 0.507);
+    padding: 40px;
+    padding-bottom: 20px;
+    color: $border;
+  }
+
+  .cf-pedge-enter-black {
     display: none;
     justify-content: space-between;
     border-top: 1px solid rgba(107, 101, 101, 0.507);
@@ -557,4 +597,108 @@ body {
 .getit {
   margin-top: 30px;
   padding: 20px;
+}
+
+.filler {
+  filter: invert(58%) sepia(85%) saturate(300%) hue-rotate(127deg)
+    brightness(88%) contrast(92%);
+}
+
+.filler-cap {
+  fill: white;
+}
+
+.bfix {
+  pointer-events: none;
+}
+
+.cf-hamburger {
+  display: none;
+  background-image: url("/images/icon-hamburger.svg");
+  width: 20px;
+  height: 20px;
+}
+
+@include sm {
+  .cf-hamburger {
+    display: block;
+  }
+
+  .cf-nav-bar-part {
+    display: none;
+  }
+
+  .cf-nav-bckg {
+    background-image: url("/images/image-hero-mobile.jpg") !important;
+    height: 30vh !important;
+  }
+
+  .cf-content {
+    width: 90%;
+  }
+  .secondary-button {
+    display: none;
+  }
+
+  .cf-head-buttons {
+    justify-content: space-evenly;
+  }
+
+  .cf-money-part {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cf-backed {
+    border: none !important;
+  }
+
+  .cf-total-backers {
+    border: none !important;
+  }
+
+  .cf-bambo-head {
+    flex-direction: column;
+  }
+
+  .cf-left-button {
+    align-items: flex-start !important;
+    flex-direction: column;
+  }
+
+  .cf-left-button button {
+    margin-top: 15px;
+  }
+
+  .cf-black-head {
+    flex-direction: column;
+  }
+
+  .cf-mahogany-head {
+    flex-direction: column;
+  }
+
+  .cf-pedge-enter-bambo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cf-pedge-enter-black {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cf-pedge-enter-free {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cf-pedge-enter-buttons {
+    padding-top: 20px;
+  }
+
+  .modal-content-thank {
+    max-width: 385px !important;
+  }
 }
